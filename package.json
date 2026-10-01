@@ -1,0 +1,17 @@
+{
+  "name": "stun-message-attribute",
+  "version": "0.1.0",
+  "description": "Parses and serializes STUN attribute type-length-value pairs including XOR-MAPPED-ADDRESS for NAT traversal.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {}
+}
