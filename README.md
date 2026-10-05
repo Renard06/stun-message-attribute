@@ -88,3 +88,10 @@ node --test
 ```
 
 All tests run under Node's built-in test runner with no network access.
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
